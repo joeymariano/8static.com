@@ -90,6 +90,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 100px; /* adjust this when changing main body */
 }
 
 header .container {
