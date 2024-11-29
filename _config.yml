@@ -2,7 +2,12 @@
 title: 8static.com
 email: joey@8static.com
 url: https://8static.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "8static is a Philadelphia-based chiptune and nerd art event series celebrating the fusion of
+  retro gaming and modern electronic music and art. We showcase performances by artists
+  who push the limits of sound chips, use technology in an interesting way,
+  or comment on video game culture and art. Beyond live events, 8static fosters a community for artists
+  and fans who explore chip music, pixel art, performance arts, hacking hardware or sofware, creative
+  visual coding creative culture."
 keywords: "chiptune, live music, electronic music, 8bit, 16bit, nerd music"
 skills: "Philadelphia's Chiptune and Nerd Arts Showcase at PhilaMOCA"
 meta_author: Joey Mariano
@@ -32,8 +37,8 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
+  copyright: 8static
+  location: Philadelphia
   social: Around the Web
   credits: Credits
 
