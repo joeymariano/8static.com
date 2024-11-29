@@ -90,7 +90,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 100px; /* adjust this when changing main body */
+    padding: 120px 0; /* adjust this when changing main body - TRBL top right bottom left */
 }
 
 header .container {
@@ -159,6 +159,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background: black;
 }
 
 .navbar a:focus {
@@ -175,11 +176,13 @@ header .intro-text .skills {
 
 .navbar-default,
 .navbar-inverse {
-    border: 0;
+    border: 0
 }
 
 section {
     padding: 100px 0;
+    background: #{{ site.color.secondary }};
+    color: white;
 }
 
 section h2 {
