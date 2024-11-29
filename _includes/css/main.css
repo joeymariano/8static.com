@@ -49,7 +49,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f001";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -64,7 +64,8 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #{{ site.color.primary }};
+    /* background-color: #{{ site.color.primary }}; */
+    background-color: #000;
 }
 
 hr.star-primary {
@@ -83,7 +84,12 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.primary }};
+    /* background: #{{ site.color.primary }}; */
+    background-image: url('/img/crowd.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header .container {
