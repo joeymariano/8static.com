@@ -1,5 +1,15 @@
-Freelancer Jekyll theme  
-=========================
+Next Tasks:
+
+modal highlight
+fix grid you absolutes
+favicon
+next show in navbar
+link color
+blusky icon
+
+todo:
+past events
+press
 
 Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
 
@@ -11,14 +21,13 @@ Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/te
 ---
 layout: default
 modal-id: 1
-date: 2020-01-18
-img: cabin.png
+date: 2014-07-18
+title: Artist Name
+img: something-something.png
 alt: image-alt
-project-date: January 2020
-client: The Client
-category: Web Development
-description: The description of the project
-
+artist: Artist
+genre: chip jamz
+bio: bio stuffs...
 ---
 ```
 
@@ -26,7 +35,7 @@ description: The description of the project
 View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
 
 ## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/joeymariano/8static.com/master/screenshot.png)
 
 ---------
 For more details, read the [documentation](http://jekyllrb.com/)
