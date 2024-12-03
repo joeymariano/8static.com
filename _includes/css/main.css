@@ -404,6 +404,7 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background: black;
 }
 
 .portfolio-modal .modal-content h2 {
