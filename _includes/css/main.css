@@ -465,3 +465,16 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+.hover-img {
+  position: relative;
+  animation: sineHover 3s infinite;
+}
+
+@keyframes sineHover {
+  0%   {top: 0px;}
+
+  50%  {top: 20px;}
+
+  100% {top: 0px;}
+}
