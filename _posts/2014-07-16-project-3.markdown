@@ -2,9 +2,10 @@
 layout: default
 modal-id: 3
 date: 2014-07-16
-img: circus.png
+title: Data Cats
+img: dataCats.jpg
 alt: image-alt
-artist: Start Bootstrap
-genre: Web Development
-bio: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+artist: Data Cats
+genre: Visuals for 12/28/24
+bio: datacats is a project that seeks to elevate the audiovisual experience by combining obsolete analog technology to produce retina scorching imagery.
 ---

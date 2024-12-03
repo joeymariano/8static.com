@@ -2,10 +2,10 @@
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: cabin.png
+title: Chipcrite
+img: chipocrite.png
 alt: image-alt
-artist: Start Bootstrap
-genre: Web Development
-bio: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+artist: Chipocrite
+genre: chip jamz
+bio: Chipocrite, a.k.a. Paul Weinstein, uses original Nintendo Game Boys, often accompanied by bass, guitar, drums and/or other lo-fi sequencers, to create complex audio masterpieces. His multifaceted but catchy compositions combine the game sounds of his childhood with modern music influences. Once an 8static mainstay (and a former member of the production team), he’s excited to return to the stage following a five-year break in performing!
 ---
-/* client to artist - category to genre - description to bio - delete project date */
