@@ -15,23 +15,18 @@
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
-            <p>{{ post.description }}</p>
+            {% if post.bio %}
+            <p>{{ post.bio}}</p>
             {% endif %}
             <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
+              {% if post.artist %}
+              <li>Artist:
+                <strong>{{ post.artist }}</strong>
               </li>
               {% endif %}
-              {% if post.project-date %}
-              <li>Date:
-                <strong>{{ post.project-date }}</strong>
-              </li>
-              {% endif %}
-              {% if post.category %}
+              {% if post.genre %}
               <li>Service:
-                <strong>{{ post.category }}</strong>
+                <strong>{{ post.genre }}</strong>
               </li>
               {% endif %}
             </ul>
