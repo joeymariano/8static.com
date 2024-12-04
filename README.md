@@ -5,9 +5,10 @@ fix grid you absolutes
 favicon
 next show in navbar
 link color
-bsky icon <--
+
 
 todo:
+bsky icon <- behavior
 refine mobile
 past events
 press
