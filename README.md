@@ -1,14 +1,15 @@
 Next Tasks:
 
-model information is off
-make ticket link look like a ticket
+- model information is off
+- add Aeoxis bio
+- make ticket link look like a ticket
 
+To Do:
 
-todo:
-bsky icon <- behavior and pink highlight
-refine mobile
-past events
-press
+- bsky icon <- behavior and pink highlight
+- refine mobile
+- past events
+- press
 
 Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer
 
