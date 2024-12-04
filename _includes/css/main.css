@@ -154,7 +154,7 @@ header .intro-text .skills {
 
 .section-container {
   background-position: center top;
-  background-image: linear-gradient(#192B56 0%, #000 40%);
+  background-image: linear-gradient(#192B56 0%, #000 40%, #192B56 100%);
 }
 
 section {

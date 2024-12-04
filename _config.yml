@@ -55,9 +55,6 @@ social:
 address:
   - line: Philadelphia, PA
 
-# Credits content
-credits: 'designed by nmlstyl'
-
 # Build settings
 markdown: kramdown
 permalink: pretty
