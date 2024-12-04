@@ -1,8 +1,6 @@
 Next Tasks:
 
 model information is off
-favicon
-navbar animate needs padding
 make ticket link look like a ticket
 
 
