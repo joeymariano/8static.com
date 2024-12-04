@@ -1,10 +1,10 @@
 Next Tasks:
 
-modal highlight
+model information is off
 fix grid you absolutes
 favicon
-next show in navbar
-link color
+navbar animate needs padding
+make ticket link look like a ticket
 
 
 todo:
