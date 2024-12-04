@@ -1,18 +1,13 @@
 Next Tasks:
 
 model information is off
-<<<<<<< HEAD
-fix grid use absolutes
-=======
-fix grid you absolutes
->>>>>>> 1c9b589ae397eba63046b1597a107bddd90d156e
 favicon
 navbar animate needs padding
 make ticket link look like a ticket
 
 
 todo:
-bsky icon <- behavior
+bsky icon <- behavior and pink highlight
 refine mobile
 past events
 press
