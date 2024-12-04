@@ -5,13 +5,14 @@ fix grid you absolutes
 favicon
 next show in navbar
 link color
-blusky icon
+bsky icon <--
 
 todo:
+refine mobile
 past events
 press
 
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
+Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer
 
 ## How to use
  - Place a image in `/img/portfolio/`

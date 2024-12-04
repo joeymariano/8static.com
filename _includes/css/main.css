@@ -479,8 +479,13 @@ footer .footer-below {
 
 @keyframes sineHover {
   0%   {top: 0px;}
-
   50%  {top: 20px;}
-
   100% {top: 0px;}
+}
+
+a.bsky-icon {
+  background-image: url(/img/Bluesky_butterfly-logo.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
 }

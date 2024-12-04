@@ -44,10 +44,12 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/8static
   - title: facebook
     url: http://facebook.com/8static
+  - title: bsky
+    url: https://bsky.app/profile/8static.bsky.social
+  - title: twitter
+    url: http://twitter.com/8static
 
 # Postal address (add as many lines as necessary)
 address:
