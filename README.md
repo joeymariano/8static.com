@@ -2,7 +2,7 @@ Next Tasks:
 
 - model information is off
 - add Aeoxis bio
-- make ticket link look like a ticket
+- mobile fonts are off
 
 To Do:
 

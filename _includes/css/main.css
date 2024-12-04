@@ -4,9 +4,20 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- @font-face {
+/* @font-face {
   font-family:'VT323' src:url(css/VT323-Regular.ttf) format('truetype');
+} */
+
+
+@font-face{
+  font-family: 'VT323';
+  src: url('css/VT323.eot');
+  src: url('css/VT323.eot?#iefix') format('embedded-opentype'),
+  url('css/VT323.woff') format('woff'),
+  url('css/VT323.ttf') format('truetype'),
+  url('css/VT323.svg#webfont') format('svg');
 }
+
 
 html {
   background-color: black;
