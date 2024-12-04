@@ -148,12 +148,14 @@ header .intro-text .skills {
     border: 0
 }
 
+.section-container {
+  background-position: center top;
+  background-image: linear-gradient(#192B56 0%, #000 40%);
+}
+
 section {
     padding: 50px 0;
-    background: #000000;
     color: white;
-    background-image: linear-gradient(#111111 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #111111 calc(100% - 1.5px)), linear-gradient(90deg, #111111 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #111111 calc(100% - 1.5px));
-    background-size: 10% 10%;
 }
 
 section h2 {
