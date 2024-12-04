@@ -35,6 +35,7 @@ a:active,
 a.active {
     outline: 0;
     color: #FF6CA9;
+    text-decoration: none;
 }
 
 h1,
@@ -498,4 +499,8 @@ a.bsky-icon {
   background-size: 48%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.fa-solid {
+  font-size: smaller;
 }
