@@ -27,6 +27,7 @@ body {
 
 p {
     font-size: 30px;
+    margin: 0 0 42px 0;
 }
 
 p.small {
@@ -276,6 +277,10 @@ section.success {
     }
   } */
 
+.btn-default{
+  color: black;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -290,8 +295,8 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.primary }};
-    background: #fff;
+    color: black;
+    background: #000000;
 }
 
 .floating-label-form-group {
@@ -508,4 +513,8 @@ a.bsky-icon {
 
 .fa-solid {
   font-size: smaller;
+}
+
+.list-inline {
+  font-size: 34px;
 }
