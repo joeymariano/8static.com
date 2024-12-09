@@ -1,10 +1,10 @@
 Next Tasks:
 
-- model information is off
+- button styling conflict
+
 
 To Do:
 
-- bsky icon <- behavior and pink highlight
 - refine mobile
 - past events
 - press

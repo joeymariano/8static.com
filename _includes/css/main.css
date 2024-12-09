@@ -64,9 +64,8 @@ h2 {
 
 header {
     text-align: center;
-    color: #fff;
-    /* background: #{{ site.color.primary }}; */
-    background-image: url('/img/crowd.jpg');
+    color: #FFFFFF;
+    background-image: url('img/crowd.jpg') !important;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -357,7 +356,6 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
-
 }
 
 footer h3 {
