@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 009
-date: 2024-12-28
+date: 2024-12-8
 title: Chipocrite
 img: chipocrite.png
 alt: image-alt
