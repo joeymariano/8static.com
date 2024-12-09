@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 3
+date: 2024-12-08
+title: Storm Blooper
+img: stormBlooper.jpg
+alt: image-alt
+artist: Storm Blooper
+genre: gameboy chiptune
+bio: After well over a decade, Storm Blooper returns to the 8static stage at PhilaMOCA this December. Harnessing nothing more than a few Gameboys, Storm Blooper (aka Chris De Pew), slaps down hard grooves while generating addicting melodies that everyone can sing along to. Throughout the years, they've had the honor of performing at numerous events including Magfest, TooManyGames, Pulsewave, Philly Nerd Nite, and more! Their music has also been featured in hit web shows such as the Youtube Original Series “Retro Tech”, “Continue?”, and Cinevore's “Nerd vs. Geek”. Join them for what is bound to be an energetic celebration of love for the community, event, and venue that changed their life for the better. Let’s fuckin party, y’all (づ◕ ▽◕)づ*:･ﾟ✧
+---

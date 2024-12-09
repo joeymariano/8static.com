@@ -1,8 +1,6 @@
 Next Tasks:
 
 - model information is off
-- add Aeoxis bio
-- mobile fonts are off
 
 To Do:
 

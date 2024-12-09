@@ -15,9 +15,6 @@
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.bio %}
-            <p>{{ post.bio}}</p>
-            {% endif %}
             <ul class="list-inline item-details">
               {% if post.artist %}
               <li>Artist:
@@ -25,11 +22,14 @@
               </li>
               {% endif %}
               {% if post.genre %}
-              <li>Service:
+              <li>Genre:
                 <strong>{{ post.genre }}</strong>
               </li>
               {% endif %}
             </ul>
+            {% if post.bio %}
+            <p>{{ post.bio}}</p>
+            {% endif %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>
