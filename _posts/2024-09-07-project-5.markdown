@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 1
+date: 2024-09-07
+title: nmlstyl
+img: nmlstyl.png
+alt: image-alt
+artist: nmlstyl
+genre: chip music / pop art
+bio: Say it out loud as animal style but drop the vowels when you write it out. ηmlstyl is joey mariano's audio visual project [electronic Music • guitar • graffiti • code • pixelArt]. The live show combines chip/synth/vapor-wave, surf rock, techno, instrumental hip hop, and retro 80s textures. Influenced by video game soundtracks, jazz professionals, and DIY punk, their performances offer a mix of nostalgic and contemporary sounds. Live, the electronic beats are replaced by Yusef Kelliebrew's powerful and dynamic drumming. Watch out for covers of popular songs with parts replaced by a game console. Expect lots of original music utilizing 90s puzzle game samples, reinvented Pac-Man-style sound effects, Joey-style improvisation, retro guitar tones, and lush synth bass patches.
+---
