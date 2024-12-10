@@ -17,10 +17,10 @@
             {% for network in site.social %}
             <li>
               {% if network.title == "bsky" %}
-              <a href="{{ network.url }}" class="bsky-icon btn-social btn-outline"><i
+              <a href="{{ network.url }}" class="bsky-icon btn-social btn-outline" target="_blank"><i
                   class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
               {% else  %}
-              <a href="{{ network.url }}" class="btn-social btn-outline"><i
+              <a href="{{ network.url }}" class="btn-social btn-outline" target="_blank"><i
                   class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
               {% endif %}
             </li>
@@ -29,7 +29,7 @@
         </div>
         <div class="footer-col col-md-4">
           <h3>Credits</h3>
-          <p><a href='https://github.com/joeymariano'>joey mariano</a></p>
+          <p><a href='https://github.com/joeymariano' target="_blank">joey mariano</a></p>
         </div>
       </div>
     </div>
