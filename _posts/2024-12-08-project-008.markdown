@@ -2,7 +2,6 @@
 layout: default
 modal-id: 008
 date: 2024-12-8
-title: Storm Blooper
 img: stormBlooper.jpg
 alt: Storm Blooper talks into a phone being used as a microphone
 artist: Storm Blooper

@@ -2,7 +2,6 @@
 layout: default
 modal-id: 001
 date: 2024-09-07
-title: Claire Kwong
 img: claire_kwong.jpeg
 alt: Claire Kwong
 artist: Claire Kwong

@@ -1,8 +1,7 @@
 ---
 layout: default
 modal-id: 006
-date: 2024-12-8
-title: datacats
+date: 2024-12-8s
 img: dataCats.jpg
 alt: broken mirrors reveal datacats' face
 artist: datacats

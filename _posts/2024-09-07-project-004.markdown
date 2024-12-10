@@ -2,7 +2,6 @@
 layout: default
 modal-id: 004
 date: 2024-09-07
-title: Zaku
 img: zaku.jpeg
 alt: all the memebers of Zaku
 artist: Zaku

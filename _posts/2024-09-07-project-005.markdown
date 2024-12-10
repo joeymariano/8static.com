@@ -2,7 +2,6 @@
 layout: default
 modal-id: 005
 date: 2024-09-07
-title: nmlstyl
 img: nmlstyl.png
 alt: Joey and Yusef from nmlstyl
 artist: nmlstyl

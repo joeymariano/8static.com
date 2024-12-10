@@ -2,7 +2,6 @@
 layout: default
 modal-id: 010
 date: 2024-12-8
-title: Floor Baba
 img: floorBaba.png
 alt: stylized selfie of Jesse Martin
 artist: Floor Baba

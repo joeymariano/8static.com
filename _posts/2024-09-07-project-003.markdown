@@ -2,7 +2,6 @@
 layout: default
 modal-id: 003
 date: 2024-09-07
-title: Cyanide Dansen
 img: cyanide_dansen.jpeg
 alt: Cyanide Dansen holding her gameboy
 artist: Cyanide Dansen

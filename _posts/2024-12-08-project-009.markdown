@@ -2,7 +2,6 @@
 layout: default
 modal-id: 009
 date: 2024-12-8
-title: Chipocrite
 img: chipocrite.png
 alt: Paul and his Telecaster
 artist: Chipocrite

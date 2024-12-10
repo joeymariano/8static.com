@@ -2,7 +2,6 @@ Next Tasks:
 
 - button styling conflict
 
-
 To Do:
 
 - refine mobile
@@ -20,11 +19,9 @@ Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/te
 layout: default
 modal-id: 1
 date: 2014-07-18
-title: Artist Name
 img: something-something.png
 alt: image-alt
 artist: Artist
-genre: chip jamz
 bio: bio stuffs...
 ---
 ```
