@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 004
+date: 2024-09-07
+title: Zaku
+img: zaku.jpeg
+alt: all the memebers of Zaku
+artist: Zaku
+genre: chip fusion
+bio: Zaku focuses on wind-synthesizer-fronted instrumental tunes inspired by 80s Japanese Jazz Fusion and New Wave of British Heavy Metal.
+---

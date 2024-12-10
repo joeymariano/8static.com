@@ -4,7 +4,7 @@ modal-id: 010
 date: 2024-12-8
 title: Floor Baba
 img: floorBaba.png
-alt: image-alt
+alt: stylized selfie of Jesse Martin
 artist: Floor Baba
 genre: Desk Pop
 bio: FLOOR BABA is the stage name of Jesse Martin, a Pittsburgh-based music producer rethinking nostalgia through a vibrant and high-impact lens. With catchy melodies and a penchant towards the enigmatic, FLOOR BABA guides the listener to spaces between chiptune, jazz fusion, hyperpop, experimental ambient, atmospheric drum and bass, and more. FLOOR BABA is the founding member of the record label DESKPOPmusic (2015-2023) and now composes music for games such as Egg Squeeze (Matter Games) and Yars Rising (Atari/WayForward).

@@ -503,7 +503,7 @@ footer .footer-below {
 }
 
 a.bsky-icon {
-  background-image: url(/img/Bluesky_butterfly-logo.svg);
+  background-image: url('../img/Bluesky_butterfly-logo.svg');
   background-size: 48%;
   background-repeat: no-repeat;
   background-position: center;

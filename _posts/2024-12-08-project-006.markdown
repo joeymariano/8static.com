@@ -4,7 +4,7 @@ modal-id: 006
 date: 2024-12-8
 title: datacats
 img: dataCats.jpg
-alt: image-alt
+alt: broken mirrors reveal datacats' face
 artist: datacats
 genre: Visuals for 12/28/24
 bio: datacats is a project that seeks to elevate the audiovisual experience by combining obsolete analog technology to produce retina scorching imagery.
