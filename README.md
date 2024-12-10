@@ -1,6 +1,10 @@
 Next Tasks:
 
 - button styling conflict
+- modal pink highlight not working (due to color info)
+- add socials in post markdown and modal information
+- make name appear over artist image
+- modal close X not showing up
 
 To Do:
 
@@ -22,6 +26,7 @@ date: 2014-07-18
 img: something-something.png
 alt: image-alt
 artist: Artist
+social: https://link-goes-here
 bio: bio stuffs...
 ---
 ```

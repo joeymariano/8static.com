@@ -277,14 +277,14 @@ section.success {
   } */
 
 .btn-default{
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
     font-size: 20px;
-    color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -293,9 +293,8 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: black;
-    background: #000000;
+    border: solid 2px white;
+    color: white;
 }
 
 .floating-label-form-group {
@@ -503,10 +502,20 @@ footer .footer-below {
 }
 
 a.bsky-icon {
-  background-image: url('../img/Bluesky_butterfly-logo.svg');
+  background-image: url('../img/bsky-logo-pink.svg');
   background-size: 48%;
   background-repeat: no-repeat;
   background-position: center;
+
+}
+
+.bsky-icon:hover,
+.bsky-icon:focus,
+.bsky-icon:active,
+.bsky-icon.active {
+    background-image: url('../img/bsky-logo-white.svg');
+    border: solid 2px white;
+    color: white;
 }
 
 .fa-solid {

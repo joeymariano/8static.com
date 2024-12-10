@@ -17,11 +17,11 @@
             {% for network in site.social %}
             <li>
               {% if network.title == "bsky" %}
-              <a href="{{ network.url }}" class="bsky-icon btn-social btn-outline" target="_blank"><i
-                  class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+              <a href="{{ network.url }}" class="bsky-icon btn-social btn-outline" target="_blank">
+                <i class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
               {% else  %}
-              <a href="{{ network.url }}" class="btn-social btn-outline" target="_blank"><i
-                  class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+              <a href="{{ network.url }}" class="btn-social btn-outline" target="_blank">
+                <i class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
               {% endif %}
             </li>
             {% endfor %}
