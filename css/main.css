@@ -183,13 +183,13 @@ section.success {
 }
 
 @media(max-width:767px) {
-    section {
-        padding: 75px 0;
-    }
+  section {
+      padding: 75px 0;
+  }
 
-    section.first {
-        padding-top: 75px;
-    }
+  section.first {
+      padding-top: 75px;
+  }
 }
 
 #portfolio .portfolio-item {
@@ -244,30 +244,33 @@ section.success {
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
+  #portfolio .portfolio-item {
+      margin: 0 0 30px;
+  }
+  .hover-img {
+    content: url('../img/8staticLogo.svg') !important;
+  }
 }
 
 /* Flexbox Portfolio Grid */
 @media (min-width: 640px) {
-    .portfolio-flex-grid .portfolio-flex-row {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: stretch;
-      justify-content: space-between;
-    }
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 49%;
-      max-width: 49%;
-    }
+  .portfolio-flex-grid .portfolio-flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
   }
-  @media (min-width: 960px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 32%;
-      max-width: 32%;
-    }
+  .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+    flex: 1 0 49%;
+    max-width: 49%;
   }
+}
+@media (min-width: 960px) {
+  .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+    flex: 1 0 32%;
+    max-width: 32%;
+  }
+}
   /* A large grid might need four columns on widescreen layouts */
   /* @media (min-width: 1380px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
@@ -491,6 +494,7 @@ footer .footer-below {
 }
 
 .hover-img {
+  content: url('../img/8staticLogoSquare.svg');
   position: relative;
   animation: sineHover 3s infinite;
 }
