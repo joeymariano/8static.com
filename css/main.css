@@ -494,7 +494,7 @@ footer .footer-below {
 }
 
 .hover-img {
-  content: url('../img/8staticLogoSquare.svg');
+  content: url('../img/8static-mobile.svg');
   position: relative;
   animation: sineHover 3s infinite;
 }
