@@ -65,3 +65,9 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+
+collections:
+  artists:
+    output: false
+  fliers:
+    output: false
