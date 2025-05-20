@@ -4,7 +4,7 @@ modal-id: 010
 date: 2025-05-25
 img: mountain-chiefs.jpg
 alt: buncha trash with a guitar stuck in it
-artist: Mountain Chiefs
+name: Mountain Chiefs
 genre: rock
 bio: “Mountain Chiefs are a three-piece, two-bass band. They play riffs.”
 

@@ -4,7 +4,7 @@ modal-id: 002
 date: 2024-09-07
 img: cyanide_dansen.jpeg
 alt: Cyanide Dansen holding her gameboy
-artist: Cyanide Dansen
+name: Cyanide Dansen
 genre: chip music
 bio: After stumbling upon LSDJ in 2011, then doing nothing until 2016 because of her studies, Marie started creating hard-hitting, melodic and frantic chiptune with the support of the local DIY/antifascist squat L'Ecluse from her quaint hometown of Rheims. Since relocating to Paris in 2017, she released breakout EP Zenzoo Pop and started extensively touring across Europe, becoming a mainstay in the European chip scene. In 2019, she unleashed the catchy and emphatic Do No Harm on Bytedoll Records while receiving high praise for her sets at events such as Square Sounds Melbourne (Australia), Chipwrecked (Denmark), Gleeetch Me Hard + 8bit Breakdown (Germany), I/O (New York City), Hyperwave x µcollective (England)... She is also very active beyond the scenes in the French chip scene, booking local and international acts in Paris with the help of the All You Can Eat collective. (bio written by S.Chibikh)
 ---

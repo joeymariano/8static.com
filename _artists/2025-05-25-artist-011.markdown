@@ -3,12 +3,8 @@ layout: default
 modal-id: 011
 date: 2025-05-25
 img: glomag.png
-alt: a wolf in front of some purple colored spaceship interior
-artist: Glomag
+alt: Glomag vintage 2000's design
+name: Glomag
 genre: chip, new wave
 bio: Chris Burke, aka glomag, has been writing music on gameboys since 2001, working with the Nanoloop and Little Sound DJ software applications. He has releases on 8bitpeoples.com and has contributed to compilations on Astralwerks, Intikrek, 24 Hour Service Station, and others. He has performed in the US, Europe, Japan, and Australia. He once pulled a small pile of aluminum cones from a garbage dumpster and attempted to sell them to the Museum of Modern Art.
-
-  * Instagram: @glorifiedmagnified
-  * Facebook: @glomag.music
-  * Bluesky: @glomag.bsky.social
 ---

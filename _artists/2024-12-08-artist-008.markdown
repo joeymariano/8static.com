@@ -4,7 +4,7 @@ modal-id: 008
 date: 2024-12-8
 img: chipocrite.png
 alt: Paul and his Telecaster
-artist: Chipocrite
+name: Chipocrite
 genre: chip jamz
 bio: Chipocrite, a.k.a. Paul Weinstein, uses original Nintendo Game Boys, often accompanied by bass, guitar, drums and/or other lo-fi sequencers, to create complex audio masterpieces. His multifaceted but catchy compositions combine the game sounds of his childhood with modern music influences. Once an 8static mainstay (and a former member of the production team), he’s excited to return to the stage following a five-year break in performing!
 ---

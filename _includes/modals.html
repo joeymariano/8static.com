@@ -1,6 +1,6 @@
 <!-- Portfolio Modals -->
-{% for post in site.posts %}
-<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
+{% for artist in site.artists %}
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ artist.modal-id }}" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
@@ -13,10 +13,10 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>{{ post.artist }}</h2>
-            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.bio %}
-            <p>{{ post.bio}}</p>
+            <h2>{{ artist.name }}</h2>
+            <img src="img/artists/{{ artist.img }}" class="img-responsive img-centered" alt="{{ artist.alt }}">
+            {% if artist.bio %}
+            <p>{{ artist.bio}}</p>
             {% endif %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
