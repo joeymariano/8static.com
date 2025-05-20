@@ -1,0 +1,22 @@
+---
+layout: default
+modal-id: 014
+date: 2025-05-25
+img: 
+alt: 
+artist: Inverse Phase
+genre: chip, industrial
+bio: Brendan Becker is Inverse Phase, and Inverse Phase is a game composer, chiptune/8-bit musician, and tribute artist. Through researching old consoles and computers like the Atari, Commodore, Nintendo, Sega, and more, he crafts music that aims for the intersection of things that he loves. Panels and performances will delve into the community and scene surrounding retro hardware and the artistic works that it has brought forth, past and present. Come and see what he can make your old hardware do!
+
+  * [https://hackers.town/@inversephase](https://hackers.town/@inversephase)
+  * [https://inversephase.bsky.social/](https://inversephase.bsky.social/)
+  * [https://youtube.com/inversephase](https://youtube.com/inversephase)
+  * [https://facebook.com/inversephase](https://facebook.com/inversephase)
+
+  BLOOP MUSEUM
+
+  * [https://oldbytes.space/@bloopmuseum](https://oldbytes.space/@bloopmuseum)
+  * [https://bloopmuseum.bsky.social/](https://bloopmuseum.bsky.social/)
+  * [https://www.youtube.com/@bloopmuseum](https://www.youtube.com/@bloopmuseum)
+  * [https://facebook.com/bloopmuseum](https://facebook.com/bloopmuseum)
+---

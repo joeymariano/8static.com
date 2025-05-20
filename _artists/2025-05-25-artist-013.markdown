@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 013
+date: 2025-05-25
+img: 
+alt: 
+artist: DIY Destruction
+genre: visuals
+bio: DIY_destruction uses pure data, Raspberry Pis, and video synths to create a visual landscape of geometric shapes and visual oddities. He has performed at Magfest, The Toy Company Music Festival in Montreal, Superbyte in the UK, Square Sounds Tokyo, and the Chipwrecked Festival in Denmark, to name a few.
+
+  * Insta: [https://www.instagram.com/diydestructionvisuals/](https://www.instagram.com/diydestructionvisuals/)
+  * Bsky: [https://bsky.app/profile/diydestruction.bsky.social](https://bsky.app/profile/diydestruction.bsky.social)
+---

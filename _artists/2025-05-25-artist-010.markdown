@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 010
+date: 2025-05-25
+img: 
+alt: 
+artist: Mountain Cheifs
+genre: 
+bio: “Mountain Chiefs are a three-piece, two-bass band. They play riffs.”
+
+  * [https://mountainchiefs.bandcamp.com/album/the-mountain-chiefs](https://mountainchiefs.bandcamp.com/album/the-mountain-chiefs)
+  * [https://www.instagram.com/themountainchiefs/](https://www.instagram.com/themountainchiefs/)
+---
