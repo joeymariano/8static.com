@@ -1,6 +1,6 @@
 ---
 layout: default
 date: 2025-5-19
-img: 
-alt: May 8static Flier
+img: 2025-05-24-flier.gif
+alt: May 8static Flier by Ami Mooregore
 ---
