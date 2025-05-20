@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2025-5-24
-img: 2025-05-24-flier.gif
-alt: May 8static Flier by Ami Mooregore
+img: 2025-05-24-flier.png
+alt: May 8static Flier by Ami Moregore
+tickets: https://www.etix.com/ticket/p/35758058/
+location: PhilaMOCA
 ---

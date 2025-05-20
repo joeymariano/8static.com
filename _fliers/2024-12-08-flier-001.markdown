@@ -1,0 +1,13 @@
+---
+layout: default
+date: 2024-12-8
+img: 2024-12-28-flier.png
+alt: December 8static Flier by nmlstyl
+tickets: https://dice.fm/event/l83kwr-chipocrite-aeoxis-storm-blooper-28th-dec-philamoca-philadelphia-tickets
+location: PhilaMOCA
+---
+<p> December 28th at <a href="http://philamoca.org" target="_blank">PhilaMOCA</a> with <a href="https://linktr.
+ee/FLOOR_BABA" target="_blank">FLOOR BABA</a>, <a href="https://www.chipocrite.com/" target="_blank">Chipocrite</a>, 
+<a href="https://stormblooper.bandcamp.com/music" target="_blank">Storm Blooper</a>, <a href="https://antoncorazza.
+com/" target="_blank">Anton Corazza</a>, <a href="https://www.instagram.com/datacats" target="_blank"">datacats</a> 
+on visuals. Doors at 7pm. Open Mic at 7:30.</p>

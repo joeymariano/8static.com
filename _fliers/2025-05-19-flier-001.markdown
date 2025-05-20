@@ -1,6 +1,0 @@
----
-layout: default
-date: 2024-12-8
-img: 2024-12-28-flier.png
-alt: December 8static
----

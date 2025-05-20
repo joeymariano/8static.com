@@ -2,32 +2,20 @@
 <section class="success" id="next-show">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Next Show =>
-          <a href="https://dice.fm/event/l83kwr-chipocrite-aeoxis-storm-blooper-28th-dec-philamoca-philadelphia-tickets" target="_blank">
-          <br></ br><br></ br>
-          <i class="fa-solid fa-ticket fa-beat"></i>
-            TICKETS
-          <i class="fa-solid fa-ticket fa-beat"></i></a>
-          <br></ br><br></ br>
-        </h2>
+        <div class="col-lg-12 text-center">
+            <h2>Next Show =>
+              <a href="{{ stie.fliers.last.tickets }}" target="_blank">
+              <br></ br><br></ br>
+              <i class="fa-solid fa-ticket fa-beat"></i>
+                TICKETS
+              <i class="fa-solid fa-ticket fa-beat"></i></a>
+              <br></ br><br></ br>
+            </h2>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-1">
-      </div>
-      <div class="col-lg-10 text-center">
-        <p> December 28th at <a href="http://philamoca.org" target="_blank">PhilaMOCA</a> with
-          <a href="https://linktr.ee/FLOOR_BABA" target="_blank">FLOOR BABA</a>,
-          <a href="https://www.chipocrite.com/" target="_blank">Chipocrite</a>,
-          <a href="https://stormblooper.bandcamp.com/music" target="_blank">Storm Blooper</a>,
-          <a href="https://antoncorazza.com/" target="_blank">Anton Corazza</a>,
-          <a href="https://www.instagram.com/datacats" target="_blank"">datacats</a> on visuals. Doors at 7pm. Open Mic at 7:30.
-        </p>
-        <img src="/img/fliers/2024-12-28-flier.png" class="img-responsive">
-      </div>
-      <div class="col-lg-1">
-      </div>
+
+        <div class="col-lg-12">
+            <img src="/img/fliers/{{ site.fliers.last.img }}" class="img-responsive">
+        </div>
     </div>
   </div>
 </section>
