@@ -72,6 +72,8 @@ collections:
     output: false
   fliers:
     output: false
+  past_events:
+    output: false
 
 # Don't ship the following to _site
 exclude:

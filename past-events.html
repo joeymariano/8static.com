@@ -1,0 +1,121 @@
+---
+layout: page
+permalink: /past-events/
+title: "Past Events — 8static"
+---
+
+<section id="past-events" class="success">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Past Events</h1>
+        <p class="past-events-intro">
+          From October 2008 through November 2017, 8static hosted 90 events across Studio 34,
+          PhilaMOCA, North Star Bar, Vox Populi, the First Unitarian Church of Philadelphia,
+          and Icebox Project Space. Click any show to expand its lineup.
+        </p>
+      </div>
+    </div>
+
+    {% assign events_desc = site.past_events | sort: 'date' | reverse %}
+    {% assign by_year = events_desc | group_by: 'year' %}
+
+    {% for year_group in by_year %}
+    <div class="past-events-year">
+      <h2 id="year-{{ year_group.name }}">{{ year_group.name }}</h2>
+      {% for event in year_group.items %}
+      <details class="past-event" id="event-{{ event.event_id }}">
+        <summary>
+          <span class="past-event-name">{{ event.name }}</span>
+          <span class="past-event-meta">{{ event.venue }} · {{ event.date_display }}</span>
+        </summary>
+        <div class="past-event-body">
+          <div class="past-event-columns">
+            {% if event.music and event.music.size > 0 %}
+            <div class="past-event-col">
+              <h4>Music</h4>
+              <ul>
+                {% for performer in event.music %}<li>{{ performer }}</li>{% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+            {% if event.visuals and event.visuals.size > 0 %}
+            <div class="past-event-col">
+              <h4>Visuals</h4>
+              <ul>
+                {% for performer in event.visuals %}<li>{{ performer }}</li>{% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          </div>
+          {% if event.flickr and event.flickr.size > 0 %}
+          <div class="past-event-flickr">
+            <span class="past-event-flickr-label">Photos:</span>
+            {% for link in event.flickr %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label | default: 'Album' }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "8static Past Events",
+  "description": "Archive of every 8static event from 2008 to 2017.",
+  "numberOfItems": {{ site.past_events.size }},
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [
+    {%- assign all_events = site.past_events | sort: 'date' | reverse -%}
+    {%- for event in all_events -%}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "MusicEvent",
+        "name": {{ event.name | jsonify }},
+        "startDate": "{{ event.date | date: '%Y-%m-%d' }}",
+        {%- if event.date_end %}
+        "endDate": "{{ event.date_end | date: '%Y-%m-%d' }}",
+        {%- endif %}
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": {{ event.venue | jsonify }},
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Philadelphia",
+            "addressRegion": "PA",
+            "addressCountry": "US"
+          }
+        },
+        "url": "{{ site.url }}/past-events/#event-{{ event.event_id }}",
+        "organizer": {
+          "@type": "Organization",
+          "name": "{{ site.short_title }}",
+          "url": "{{ site.url }}"
+        }
+        {%- assign performers = "" | split: "" -%}
+        {%- if event.music -%}{%- assign performers = performers | concat: event.music -%}{%- endif -%}
+        {%- if event.visuals -%}{%- assign performers = performers | concat: event.visuals -%}{%- endif -%}
+        {%- if performers.size > 0 -%},
+        "performer": [
+          {%- for p in performers -%}
+          {"@type": "MusicGroup", "name": {{ p | jsonify }}}{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        ]
+        {%- endif %}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

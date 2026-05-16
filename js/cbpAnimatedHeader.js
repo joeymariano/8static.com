@@ -1,44 +1,38 @@
 /**
- * cbpAnimatedHeader.js v1.0.0
- * http://www.codrops.com
+ * cbpAnimatedHeader.js v1.1.0
+ *
+ * Toggles `navbar-shrink` on the fixed navbar once the user has scrolled
+ * past `changeHeaderOn` pixels. Uses requestAnimationFrame instead of a
+ * setTimeout throttle so the class flip is synced with the next paint —
+ * no perceptible scroll "skip" at the threshold.
  *
  * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
  */
-var cbpAnimatedHeader = (function() {
+(function () {
+  var header = document.querySelector('.navbar-fixed-top');
+  if (!header) return;
 
-	var docElem = document.documentElement,
-		header = document.querySelector( '.navbar-fixed-top' ),
-		didScroll = false,
-		changeHeaderOn = 300;
+  var changeHeaderOn = 300;
+  var ticking = false;
+  var isShrunk = false;
 
-	function init() {
-		window.addEventListener( 'scroll', function( event ) {
-			if( !didScroll ) {
-				didScroll = true;
-				setTimeout( scrollPage, 250 );
-			}
-		}, false );
-	}
+  function update() {
+    var sy = window.pageYOffset || document.documentElement.scrollTop;
+    var shouldShrink = sy >= changeHeaderOn;
+    if (shouldShrink !== isShrunk) {
+      classie[shouldShrink ? 'add' : 'remove'](header, 'navbar-shrink');
+      isShrunk = shouldShrink;
+    }
+    ticking = false;
+  }
 
-	function scrollPage() {
-		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'navbar-shrink' );
-		}
-		else {
-			classie.remove( header, 'navbar-shrink' );
-		}
-		didScroll = false;
-	}
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
-	}
-
-	init();
-
+  // Set the initial state in case the page loads already scrolled.
+  update();
 })();
