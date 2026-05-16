@@ -1,15 +1,16 @@
 # Site settings
 title: 8static.com
+short_title: 8static
+tagline: "Philadelphia's Chiptune & Electronic Arts Showcase at PhilaMOCA"
 email: joey@8static.com
-url: https://8static.com/_site/
-description: "8static is a Philadelphia-based chiptune and electronic arts event series celebrating the fusion of
-  retro gaming and modern electronic music and art. We showcase performances by artists
-  who push the limits of sound chips, use technology in an interesting way,
-  or comment on video game culture and art. Beyond live events, 8static fosters a community for artists and fans who explore chip music,
-    pixel art, performance arts, hacking hardware or sofware, creative visual coding, and creative culture in general."
-keywords: "chiptune, live music, electronic music, 8bit, 16bit, nerd music"
+url: https://8static.com
+description: "Philadelphia's chiptune & electronic arts showcase at PhilaMOCA. Live performances pushing the limits of sound chips, hacking hardware, pixel art, and creative coding."
+keywords: "chiptune, live music, electronic music, 8bit, 16bit, nerd music, PhilaMOCA, Philadelphia, chip music, video game music, pixel art, demoscene"
 skills: "Philadelphia's Electronic Arts Showcase at PhilaMOCA"
 meta_author: Joey Mariano
+image: img/crowd.jpg
+image_width: 1005
+image_height: 423
 
 # Google webmaster tools
 google_verify:

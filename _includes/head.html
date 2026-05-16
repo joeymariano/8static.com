@@ -1,35 +1,104 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.short_title }} — {{ site.tagline }}</title>
   <meta name="description" content="{{ site.description }}">
-  <meta name="keywords" content="{{ site.keywords }}" />
-  {% if site.meta_author %}
-  <meta name="author" content="{{ site.meta_author }}">{% endif %}
+  <meta name="keywords" content="{{ site.keywords }}">
+  {% if site.meta_author %}<meta name="author" content="{{ site.meta_author }}">{% endif %}
+  <meta name="theme-color" content="#000000">
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-  <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+  <!-- Open Graph (Facebook, iMessage, Bluesky, LinkedIn, Discord, Slack) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.short_title }}">
+  <meta property="og:title" content="{{ site.short_title }} — {{ site.tagline }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ site.url }}/">
+  <meta property="og:image" content="{{ site.url }}/{{ site.image }}">
+  <meta property="og:image:width" content="{{ site.image_width }}">
+  <meta property="og:image:height" content="{{ site.image_height }}">
+  <meta property="og:image:alt" content="A crowd at an 8static show">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X / Bluesky -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.short_title }} — {{ site.tagline }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/{{ site.image }}">
+  <meta name="twitter:image:alt" content="A crowd at an 8static show">
+
+  <!-- Search engine verification (optional) -->
+  {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+  {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <!-- Google verification -->
-  {% if site.google_verify %}
-  <meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
-
-  <!-- Bing Verification -->
-  {% if site.bing_verify %}
-  <meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
-
-  <!-- Custom Fonts -->
   <link rel="stylesheet" href="css/fonts.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel="icon" type="image/8static-icon" href="img/favicon.ico">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Structured data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.short_title }}",
+    "alternateName": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/img/8staticLogo.svg",
+    "description": "{{ site.description }}",
+    "email": "{{ site.email }}",
+    "sameAs": [{% for n in site.social %}"{{ n.url }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  }
+  </script>
+
+  {% assign next_show = site.fliers.last %}
+  {% if next_show %}
+  <!-- Structured data: next event -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicEvent",
+    "name": "8static at PhilaMOCA — {{ next_show.date | date: '%B %-d, %Y' }}",
+    "startDate": "{{ next_show.date | date: '%Y-%m-%d' }}",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "image": "{{ site.url }}/img/fliers/{{ next_show.img }}",
+    "url": "{{ site.url }}/",
+    "description": "{{ site.description }}",
+    "location": {
+      "@type": "Place",
+      "name": "{{ next_show.location | default: 'PhilaMOCA' }}",
+      "url": "https://philamoca.org",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Philadelphia",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      }
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "{{ next_show.tickets }}",
+      "availability": "https://schema.org/InStock",
+      "category": "primary"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "{{ site.short_title }}",
+      "url": "{{ site.url }}"
+    }
+  }
+  </script>
+  {% endif %}
 </head>
