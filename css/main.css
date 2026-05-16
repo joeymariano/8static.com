@@ -4,13 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-@font-face{
+@font-face {
   font-family: 'VT323';
-  src: url('VT323.eot');
-  src: url('VT323.eot?#iefix') format('embedded-opentype'),
-  url('VT323.woff') format('woff'),
-  url('VT323.ttf') format('truetype'),
-  url('VT323.svg#webfont') format('svg');
+  src: url('VT323.woff2') format('woff2');
+  font-display: swap;
 }
 
 html {
