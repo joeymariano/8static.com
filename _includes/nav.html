@@ -31,8 +31,8 @@
         <li{% if on_home %} class="page-scroll"{% endif %}>
           <a href="{{ prefix }}#about">About</a>
         </li>
-        <li>
-          <a href="/past-events/">Past Events</a>
+        <li{% if on_home %} class="page-scroll"{% endif %}>
+          <a href="{{ prefix }}#past-events">Past Events</a>
         </li>
       </ul>
     </div>

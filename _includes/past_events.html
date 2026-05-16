@@ -1,18 +1,13 @@
----
-layout: page
-permalink: /past-events/
-title: "Past Events — 8static"
----
-
-<section id="past-events" class="success">
+<!-- Past Events Section -->
+<section id="past-events">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1>Past Events</h1>
+        <h2>Past Events</h2>
         <p class="past-events-intro">
           From October 2008 through November 2017, 8static hosted 90 events across Studio 34,
           PhilaMOCA, North Star Bar, Vox Populi, the First Unitarian Church of Philadelphia,
-          and Icebox Project Space. Click any show to expand its lineup.
+          and Icebox Project Space.
         </p>
       </div>
     </div>
@@ -20,47 +15,54 @@ title: "Past Events — 8static"
     {% assign events_desc = site.past_events | sort: 'date' | reverse %}
     {% assign by_year = events_desc | group_by: 'year' %}
 
-    {% for year_group in by_year %}
-    <div class="past-events-year">
-      <h2 id="year-{{ year_group.name }}">{{ year_group.name }}</h2>
-      {% for event in year_group.items %}
-      <details class="past-event" id="event-{{ event.event_id }}">
+    <div class="past-events-years">
+      {% for year_group in by_year %}
+      <details class="past-events-year" id="year-{{ year_group.name }}">
         <summary>
-          <span class="past-event-name">{{ event.name }}</span>
-          <span class="past-event-meta">{{ event.venue }} · {{ event.date_display }}</span>
+          <span class="past-events-year-label">{{ year_group.name }}</span>
+          <span class="past-events-year-count">{{ year_group.items.size }} show{% if year_group.items.size != 1 %}s{% endif %}</span>
         </summary>
-        <div class="past-event-body">
-          <div class="past-event-columns">
-            {% if event.music and event.music.size > 0 %}
-            <div class="past-event-col">
-              <h4>Music</h4>
-              <ul>
-                {% for performer in event.music %}<li>{{ performer }}</li>{% endfor %}
-              </ul>
+        <div class="past-events-year-body">
+          {% for event in year_group.items %}
+          <details class="past-event" id="event-{{ event.event_id }}">
+            <summary>
+              <span class="past-event-name">{{ event.name }}</span>
+              <span class="past-event-meta">{{ event.venue }} · {{ event.date_display }}</span>
+            </summary>
+            <div class="past-event-body">
+              <div class="past-event-columns">
+                {% if event.music and event.music.size > 0 %}
+                <div class="past-event-col">
+                  <h4>Music</h4>
+                  <ul>
+                    {% for performer in event.music %}<li>{{ performer }}</li>{% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if event.visuals and event.visuals.size > 0 %}
+                <div class="past-event-col">
+                  <h4>Visuals</h4>
+                  <ul>
+                    {% for performer in event.visuals %}<li>{{ performer }}</li>{% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+              </div>
+              {% if event.flickr and event.flickr.size > 0 %}
+              <div class="past-event-flickr">
+                <span class="past-event-flickr-label">Photos:</span>
+                {% for link in event.flickr %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label | default: 'Album' }}</a>
+                {% endfor %}
+              </div>
+              {% endif %}
             </div>
-            {% endif %}
-            {% if event.visuals and event.visuals.size > 0 %}
-            <div class="past-event-col">
-              <h4>Visuals</h4>
-              <ul>
-                {% for performer in event.visuals %}<li>{{ performer }}</li>{% endfor %}
-              </ul>
-            </div>
-            {% endif %}
-          </div>
-          {% if event.flickr and event.flickr.size > 0 %}
-          <div class="past-event-flickr">
-            <span class="past-event-flickr-label">Photos:</span>
-            {% for link in event.flickr %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label | default: 'Album' }}</a>
-            {% endfor %}
-          </div>
-          {% endif %}
+          </details>
+          {% endfor %}
         </div>
       </details>
       {% endfor %}
     </div>
-    {% endfor %}
   </div>
 </section>
 
@@ -97,7 +99,7 @@ title: "Past Events — 8static"
             "addressCountry": "US"
           }
         },
-        "url": "{{ site.url }}/past-events/#event-{{ event.event_id }}",
+        "url": "{{ site.url }}/#event-{{ event.event_id }}",
         "organizer": {
           "@type": "Organization",
           "name": "{{ site.short_title }}",
