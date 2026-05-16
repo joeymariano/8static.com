@@ -71,3 +71,10 @@ collections:
     output: false
   fliers:
     output: false
+
+# Don't ship original high-resolution image backups to _site
+exclude:
+  - img/high-quality
+  - img/artists/high-quality
+  - img/portfolio/high-quality
+  - img/fliers/high-quality

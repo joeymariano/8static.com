@@ -522,10 +522,21 @@ a.bsky-icon {
     color: white;
 }
 
-.fa-solid {
-  font-size: smaller;
-}
-
 .list-inline {
   font-size: 34px;
+}
+
+/* Inline SVG icons (replacement for Font Awesome) */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+.icon-3x { width: 3em; height: 3em; }
+.icon-beat { animation: icon-beat 1s ease-in-out infinite; transform-origin: center; }
+@keyframes icon-beat {
+  0%, 90% { transform: scale(1); }
+  45%     { transform: scale(1.25); }
 }

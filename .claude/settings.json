@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s *)",
+      "Bash(curl -sI *)",
+      "Bash(arp -a *)",
+      "Bash(ping -c *)",
+      "Bash(dns-sd -B *)",
+      "Bash(bundle exec jekyll build)"
+    ]
+  }
+}
