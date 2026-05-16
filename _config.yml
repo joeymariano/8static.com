@@ -72,9 +72,16 @@ collections:
   fliers:
     output: false
 
-# Don't ship original high-resolution image backups to _site
+# Don't ship the following to _site
 exclude:
+  # Original high-resolution image backups
   - img/high-quality
   - img/artists/high-quality
   - img/portfolio/high-quality
   - img/fliers/high-quality
+  # Theme/repo files that aren't part of the site
+  - screenshot.png
+  - README.md
+  - LICENCE
+  - Rakefile
+  - freelancer-theme-jekyll.gemspec
