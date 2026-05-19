@@ -6,3 +6,8 @@ _site
 .jekyll-metadata
 
 Gemfile.lock
+
+# Local secrets (SFTP credentials for deploy.sh)
+.env
+.env.local
+.env.*.local
