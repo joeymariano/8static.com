@@ -1,0 +1,24 @@
+<!-- Recent Fliers Section -->
+{% assign fliered_events = site.past_events | where_exp: "e", "e.flier" | sort: 'date' | reverse %}
+{% if fliered_events.size > 0 %}
+<section id="recent-fliers">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Recent Shows</h2>
+      </div>
+    </div>
+    <div class="recent-fliers-row">
+      {% for event in fliered_events limit: 3 %}
+      <a class="recent-flier-item" href="#flierModal-{{ event.event_id }}" data-toggle="modal">
+        <img src="/img/fliers/{{ event.flier.img }}" alt="{{ event.flier.alt | default: event.name }}" width="{{ event.flier.width }}" height="{{ event.flier.height }}" loading="lazy" decoding="async">
+        <div class="recent-flier-meta">
+          <span class="recent-flier-name">{{ event.name }}</span>
+          <span class="recent-flier-date">{{ event.date_display }}</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -5,8 +5,9 @@
 <body id="page-top" class="index">
   {% include nav.html %}
   {% include header.html %}
+  {% include recent_fliers.html %}
   <div class="section-container">
-  {% include next_show.html %}
+  {% if site.fliers.size > 0 %}{% include next_show.html %}{% endif %}
   {% include posts_grid.html %}
   {% include about.html %}
   {% include past_events.html %}

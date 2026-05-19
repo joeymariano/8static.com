@@ -22,9 +22,11 @@
         <li class="hidden">
           <a href="#page-top"></a>
         </li>
+        {% if site.fliers.size > 0 %}
         <li{% if on_home %} class="page-scroll"{% endif %}>
           <a href="{{ prefix }}#next-show">Next Show</a>
         </li>
+        {% endif %}
         <li{% if on_home %} class="page-scroll"{% endif %}>
           <a href="{{ prefix }}#portfolio">Artists</a>
         </li>

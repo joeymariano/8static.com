@@ -30,6 +30,13 @@
               <span class="past-event-meta">{{ event.venue }} · {{ event.date_display }}</span>
             </summary>
             <div class="past-event-body">
+              {% if event.flier %}
+              <div class="past-event-flier">
+                <a href="#flierModal-{{ event.event_id }}" data-toggle="modal">
+                  <img src="/img/fliers/{{ event.flier.img }}" alt="{{ event.flier.alt | default: event.name }}" width="{{ event.flier.width }}" height="{{ event.flier.height }}" loading="lazy" decoding="async">
+                </a>
+              </div>
+              {% endif %}
               <div class="past-event-columns">
                 {% if event.music and event.music.size > 0 %}
                 <div class="past-event-col">
