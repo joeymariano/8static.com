@@ -46,6 +46,38 @@ for arg in "$@"; do
   esac
 done
 
+# --- Pre-flight binary integrity checks ------------------------------------
+# Catches the corrupt-VT323.woff2 class of bug (UTF-8 lossy re-encoding
+# from a text editor / quick look / errant script) before it ships.
+# Add more (path, validator) entries below as needed.
+
+check_woff2() {
+  local path="$1"
+  if [[ ! -f "$path" ]]; then
+    echo "  ✗ missing: $path" >&2
+    return 1
+  fi
+  python3 - "$path" <<'PY'
+import struct, sys
+p = sys.argv[1]
+d = open(p,'rb').read()
+sig = d[0:4]
+if sig != b'wOF2':
+    print(f"  ✗ {p}: not a woff2 file (signature={sig!r})", file=sys.stderr)
+    sys.exit(1)
+header_len = struct.unpack('>I', d[8:12])[0]
+if header_len != len(d):
+    print(f"  ✗ {p}: header length {header_len} != file size {len(d)} — file is corrupted", file=sys.stderr)
+    print(f"    likely a UTF-8 lossy re-encoding (text editor opened the binary?)", file=sys.stderr)
+    print(f"    grab a fresh copy from fonts.gstatic.com — see scripts notes.", file=sys.stderr)
+    sys.exit(1)
+print(f"  ✓ {p} ({len(d)} bytes, woff2 header ok)")
+PY
+}
+
+echo "==> integrity check"
+check_woff2 css/VT323.woff2 || { echo "==> aborting deploy" >&2; exit 1; }
+
 # --- Build -----------------------------------------------------------------
 if [[ "$BUILD" -eq 1 ]]; then
   echo "==> bundle exec jekyll build"
