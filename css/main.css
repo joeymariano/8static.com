@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
     overscroll-behavior-y: none;
     background-color: black;
-    font-family:'VT323';
+    font-family: 'VT323', monospace;
     /* font-smooth: none;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none; */
@@ -50,7 +50,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: 'VT323';
+    font-family: 'VT323', monospace;
 }
 
 h2 {
@@ -85,7 +85,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: 'VT323';
+    font-family: 'VT323', monospace;
     font-size: 32px;
 }
 
@@ -135,7 +135,7 @@ header .intro-text .skills {
 
 .navbar {
     text-transform: uppercase;
-    font-family: 'VT323';
+    font-family: 'VT323', monospace;
     font-size:22px;
     background: black;
 }
@@ -466,6 +466,14 @@ footer .footer-below {
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
+}
+
+/* Tighter type for modal body content (bio, links, meta) */
+.portfolio-modal .modal-body p,
+.portfolio-modal .modal-body .artist-links a,
+.portfolio-modal .modal-body .flier-modal-meta {
+    font-size: 20px;
+    line-height: 1.4;
 }
 
 .portfolio-modal .close-modal {

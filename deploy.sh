@@ -65,7 +65,10 @@ echo "==> mirroring _site/ -> sftp://${SFTP_USER}@${SFTP_HOST}:${SFTP_PORT}${SFT
 # --delete     = remove remote files that no longer exist locally
 # --parallel=4 = 4 concurrent transfers
 # --exclude-glob .DS_Store = never upload macOS junk
-lftp -u "${SFTP_USER},${SFTP_PASS}" -p "${SFTP_PORT}" "sftp://${SFTP_HOST}" <<EOF
+#
+# Output is piped through sed to redact any //user:pass@ patterns lftp prints
+# in verbose/dry-run mode, so credentials never reach the terminal or logs.
+lftp -u "${SFTP_USER},${SFTP_PASS}" -p "${SFTP_PORT}" "sftp://${SFTP_HOST}" <<EOF 2>&1 | sed -E 's#//[^:/@]+:[^@]+@#//***:***@#g'
 set sftp:auto-confirm yes
 set ssl:verify-certificate no
 mirror -R ${DRY_RUN} --delete --parallel=4 --exclude-glob .DS_Store --verbose _site/ ${SFTP_REMOTE_PATH}

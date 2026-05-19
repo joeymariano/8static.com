@@ -88,3 +88,9 @@ exclude:
   - LICENCE
   - Rakefile
   - freelancer-theme-jekyll.gemspec
+  # Deploy tooling and secrets — must never end up in _site/
+  - deploy.sh
+  - .env
+  - .env.example
+  - .env.local
+  - .env.*.local
