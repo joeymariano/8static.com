@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 012
-date: 2025-05-25
+date: 2025-05-24
 img: DanimalCannon5.jpg
 alt: Danimal Cannon in front of a screen with chiptue live visuals
 name: Danimal Cannon

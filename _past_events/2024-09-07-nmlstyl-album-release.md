@@ -7,10 +7,13 @@ year: 2024
 event_id: "09072024"
 music:
   - "nmlstyl"
-  - "ZAKU"
+  - "Zaku"
+  - "Cyanide Dansen"
+visuals:
+  - "Claire Kwong"
 flier:
   img: 2024-09-07-flier.png
   alt: "NMLSTYL Album Release flier"
-  width: 2519
-  height: 3544
+  width: 2515
+  height: 3540
 ---

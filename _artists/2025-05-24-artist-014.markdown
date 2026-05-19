@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 014
-date: 2025-05-25
+date: 2025-05-24
 img: inversePhase.png
 alt: Illustration of Brendan Becker (Inverse Phase)
 name: Inverse Phase

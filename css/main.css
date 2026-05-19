@@ -200,7 +200,7 @@ section.success {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 240px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -221,16 +221,31 @@ section.success {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
     text-align: center;
-    font-size: 20px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
+#portfolio .portfolio-item .portfolio-link .caption .caption-content .artist-name {
+    margin: 0;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    word-break: break-word;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content svg.icon {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
@@ -249,31 +264,41 @@ section.success {
 }
 
 /* Flexbox Portfolio Grid */
+.portfolio-flex-grid .portfolio-flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 12px;
+}
+.portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+  flex: 1 0 calc(50% - 12px);
+  max-width: calc(50% - 12px);
+}
 @media (min-width: 640px) {
-  .portfolio-flex-grid .portfolio-flex-row {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: space-between;
-  }
   .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-    flex: 1 0 49%;
-    max-width: 49%;
+    flex: 1 0 calc(33.333% - 12px);
+    max-width: calc(33.333% - 12px);
   }
 }
 @media (min-width: 960px) {
   .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-    flex: 1 0 32%;
-    max-width: 32%;
+    flex: 1 0 calc(25% - 12px);
+    max-width: calc(25% - 12px);
   }
 }
-  /* A large grid might need four columns on widescreen layouts */
-  /* @media (min-width: 1380px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 23.5%;
-      max-width: 23.5%;
-    }
-  } */
+@media (min-width: 1280px) {
+  .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+    flex: 1 0 calc(20% - 12px);
+    max-width: calc(20% - 12px);
+  }
+}
+@media (min-width: 1600px) {
+  .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+    flex: 1 0 calc(16.666% - 12px);
+    max-width: calc(16.666% - 12px);
+  }
+}
 
 .btn-default{
   color: white;
@@ -739,7 +764,6 @@ a.bsky-icon {
   width: 100%;
   height: auto;
   display: block;
-  border: 1px solid rgba(255,255,255,0.15);
   cursor: zoom-in;
   transition: opacity .15s;
 }
@@ -751,6 +775,38 @@ a.bsky-icon {
 .flier-modal-meta {
   opacity: 0.7;
   margin-bottom: 16px;
+}
+
+.shuffle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 28px;
+  padding: 8px 18px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.35);
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, transform .15s;
+}
+
+.shuffle-btn:hover,
+.shuffle-btn:focus {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.7);
+  outline: none;
+}
+
+.shuffle-btn:active {
+  transform: scale(0.97);
+}
+
+.shuffle-btn svg {
+  fill: currentColor;
 }
 
 #recent-fliers {
@@ -789,7 +845,6 @@ a.bsky-icon {
   width: 100%;
   height: auto;
   display: block;
-  border: 1px solid rgba(255,255,255,0.15);
   cursor: zoom-in;
 }
 

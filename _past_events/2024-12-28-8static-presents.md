@@ -6,7 +6,7 @@ date_display: "Dec 28, 2024"
 year: 2024
 event_id: "12282024"
 music:
-  - "FLOOR BABA"
+  - "Floor Baba"
   - "Chipocrite"
   - "Storm Blooper"
   - "Anton Corazza"

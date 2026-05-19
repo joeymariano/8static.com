@@ -7,8 +7,8 @@ year: 2025
 event_id: "05242025"
 music:
   - "Danimal Cannon"
-  - "The Mountain Chiefs"
-  - "glomag"
+  - "Mountain Chiefs"
+  - "Glomag"
   - "Inverse Phase (Bloop Museum talk)"
 visuals:
   - "DIY Destruction"

@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 013
-date: 2025-05-25
+date: 2025-05-24
 img: diydestruction.png
 alt: DIY Destruction at MAGfest - photo by Chiptography
 name: DIY Destruction

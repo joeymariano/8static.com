@@ -35,3 +35,33 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Shuffle artist grid (on page load + on button click)
+$(function() {
+    function shuffleArtists(animate) {
+        var $row = $('.portfolio-flex-row');
+        var items = $row.children('.portfolio-flex-item').get();
+        for (var i = items.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = items[i]; items[i] = items[j]; items[j] = tmp;
+        }
+        if (animate) {
+            $row.css({
+                transition: 'opacity .5s ease, transform .5s ease',
+                opacity: 0,
+                transform: 'scale(0.96)'
+            });
+            setTimeout(function() {
+                $row.append(items);
+                $row.css({
+                    opacity: 1,
+                    transform: 'scale(1)'
+                });
+            }, 550);
+        } else {
+            $row.append(items);
+        }
+    }
+    shuffleArtists(false);
+    $(document).on('click', '#shuffle-artists', function() { shuffleArtists(true); });
+});

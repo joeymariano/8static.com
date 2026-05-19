@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 006
-date: 2024-12-8
+date: 2024-12-28
 img: anton.jpg
 alt: Anton in front of some graffiti
 name: Anton Corazza

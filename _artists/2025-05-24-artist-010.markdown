@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 010
-date: 2025-05-25
+date: 2025-05-24
 img: mountain-chiefs.jpg
 alt: buncha trash with a guitar stuck in it
 name: Mountain Chiefs
