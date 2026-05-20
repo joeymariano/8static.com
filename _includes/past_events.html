@@ -37,6 +37,12 @@
                 </a>
               </div>
               {% endif %}
+              {% if event.description %}
+              <details class="past-event-description-wrap">
+                <summary class="past-event-description-toggle">Invite</summary>
+                <div class="past-event-description">{{ event.description }}</div>
+              </details>
+              {% endif %}
               <div class="past-event-columns">
                 {% if event.music and event.music.size > 0 %}
                 <div class="past-event-col">

@@ -580,8 +580,8 @@ a.bsky-icon {
 
 .past-events-years {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -600,7 +600,7 @@ a.bsky-icon {
 
 .past-events-year > summary {
   cursor: pointer;
-  padding: 12px 16px;
+  padding: 18px 22px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -638,13 +638,14 @@ a.bsky-icon {
 
 .past-events-year-label {
   font-family: 'VT323', monospace;
-  font-size: 28px;
+  font-size: 48px;
+  line-height: 1;
   flex: 1 1 auto;
 }
 
 .past-events-year-count {
   opacity: 0.65;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: lowercase;
 }
 
@@ -662,11 +663,11 @@ a.bsky-icon {
 
 .past-event > summary {
   cursor: pointer;
-  padding: 12px 16px;
+  padding: 16px 20px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 16px;
+  gap: 6px 18px;
   align-items: baseline;
   user-select: none;
   transition: background-color 120ms ease;
@@ -697,12 +698,12 @@ a.bsky-icon {
 
 .past-event-name {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .past-event-meta {
-  opacity: 0.75;
-  font-size: 14px;
+  opacity: 0.8;
+  font-size: 20px;
 }
 
 .past-event-body {
@@ -721,9 +722,9 @@ a.bsky-icon {
 
 .past-event-col h4 {
   font-family: 'VT323', monospace;
-  font-size: 26px;
-  margin: 0 0 8px;
-  opacity: 0.8;
+  font-size: 38px;
+  margin: 0 0 10px;
+  opacity: 0.85;
 }
 
 .past-event-col ul {
@@ -732,6 +733,8 @@ a.bsky-icon {
   margin: 0;
   columns: 2;
   column-gap: 24px;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 @media (max-width: 600px) {
@@ -743,11 +746,46 @@ a.bsky-icon {
   break-inside: avoid;
 }
 
+.past-event-description-wrap {
+  margin-bottom: 18px;
+}
+
+.past-event-description-toggle {
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  opacity: 0.7;
+  letter-spacing: 0.04em;
+  user-select: none;
+  list-style: none;
+}
+
+.past-event-description-toggle::-webkit-details-marker { display: none; }
+
+.past-event-description-toggle::before {
+  content: '▶ ';
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.past-event-description-wrap[open] .past-event-description-toggle::before {
+  content: '▼ ';
+}
+
+.past-event-description {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-top: 10px;
+  max-width: 680px;
+}
+
 .past-event-flickr {
   margin-top: 18px;
   padding-top: 12px;
   border-top: 1px dashed rgba(255,255,255,0.18);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .past-event-flickr-label {
