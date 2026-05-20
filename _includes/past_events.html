@@ -69,6 +69,17 @@
                 {% endfor %}
               </div>
               {% endif %}
+              {% if event.chronicle %}
+              <details class="past-event-chronicle">
+                <summary class="past-event-chronicle-toggle">Chronicle{% if event.chronicle.count > 1 %} · {{ event.chronicle.count }} videos{% endif %}</summary>
+                <div class="past-event-chronicle-body">
+                  <div class="past-event-chronicle-embed" data-vid="{{ event.chronicle.url | split: '/' | last }}">
+                    <iframe class="past-event-chronicle-iframe" width="560" height="315" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="{{ event.name }} — Chip Music Chronicle"></iframe>
+                  </div>
+                  <a class="past-event-chronicle-link" href="{{ event.chronicle.url }}" target="_blank" rel="noopener">Watch on YouTube →</a>
+                </div>
+              </details>
+              {% endif %}
             </div>
           </details>
           {% endfor %}
@@ -133,4 +144,16 @@
     {%- endfor %}
   ]
 }
+</script>
+<script>
+document.querySelectorAll('.past-event-chronicle').forEach(function(el) {
+  el.addEventListener('toggle', function() {
+    if (!el.open) return;
+    var embed = el.querySelector('.past-event-chronicle-embed');
+    var iframe = el.querySelector('.past-event-chronicle-iframe');
+    if (embed && iframe && !iframe.src) {
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + embed.dataset.vid + '?rel=0';
+    }
+  });
+});
 </script>
