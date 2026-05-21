@@ -12,6 +12,7 @@
 
 html {
   background-color: black;
+  interpolate-size: allow-keywords;
 }
 
 body {
@@ -869,6 +870,37 @@ a.bsky-icon {
 
 .past-event-flier a:hover img {
   opacity: 0.85;
+}
+
+/* Eased open/close for Past Events <details> (modern browsers only — older
+   browsers keep the instant native toggle, which still works fine). */
+.past-events-year::details-content,
+.past-event::details-content,
+.past-event-description-wrap::details-content,
+.past-event-chronicle::details-content {
+  block-size: 0;
+  overflow: clip;
+  opacity: 0;
+  transition: content-visibility 260ms allow-discrete,
+              block-size 260ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              opacity 200ms ease;
+}
+
+.past-events-year[open]::details-content,
+.past-event[open]::details-content,
+.past-event-description-wrap[open]::details-content,
+.past-event-chronicle[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .past-events-year::details-content,
+  .past-event::details-content,
+  .past-event-description-wrap::details-content,
+  .past-event-chronicle::details-content {
+    transition: none;
+  }
 }
 
 .flier-modal-meta {
