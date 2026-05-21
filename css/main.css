@@ -593,7 +593,6 @@ a.bsky-icon {
 }
 
 .past-events-year {
-  border: 1px solid rgba(255,255,255,0.18);
   border-radius: 4px;
   background: rgba(0,0,0,0.25);
   overflow: hidden;
@@ -634,7 +633,6 @@ a.bsky-icon {
 
 .past-events-year[open] > summary {
   background: rgba(255,255,255,0.10);
-  border-bottom: 1px solid rgba(255,255,255,0.18);
 }
 
 .past-events-year-label {
@@ -655,7 +653,6 @@ a.bsky-icon {
 }
 
 .past-event {
-  border: 1px solid rgba(255,255,255,0.18);
   border-radius: 4px;
   margin: 8px 0;
   background: rgba(0,0,0,0.25);
@@ -694,7 +691,6 @@ a.bsky-icon {
 
 .past-event[open] > summary {
   background: rgba(255,255,255,0.08);
-  border-bottom: 1px solid rgba(255,255,255,0.18);
 }
 
 .past-event-name {
@@ -785,7 +781,6 @@ a.bsky-icon {
 .past-event-flickr {
   margin-top: 18px;
   padding-top: 12px;
-  border-top: 1px dashed rgba(255,255,255,0.18);
   font-size: 18px;
 }
 
@@ -801,7 +796,6 @@ a.bsky-icon {
 .past-event-chronicle {
   margin-top: 18px;
   padding-top: 12px;
-  border-top: 1px dashed rgba(255,255,255,0.18);
 }
 
 .past-event-chronicle-toggle {
