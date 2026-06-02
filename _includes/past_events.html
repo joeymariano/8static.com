@@ -65,7 +65,8 @@
               <div class="past-event-flickr">
                 <span class="past-event-flickr-label">Photos:</span>
                 {% for link in event.flickr %}
-                <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label | default: 'Album' }}</a>
+                {% assign flickr_user = link.url | split: '/photos/' | last | split: '/' | first %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener">{% if link.label %}{{ link.label }} ({{ flickr_user }}){% else %}{{ flickr_user }} photos{% endif %}</a>
                 {% endfor %}
               </div>
               {% endif %}
