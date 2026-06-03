@@ -5,7 +5,7 @@
       <div class="col-lg-12 text-center">
         <h2>Past Events</h2>
         <p class="past-events-intro">
-          From October 2008 through November 2017, 8static hosted 90 events across Studio 34,
+          From October 2008 through May 2025, 8static has hosted 93 events across Studio 34,
           PhilaMOCA, North Star Bar, Vox Populi, the First Unitarian Church of Philadelphia,
           and Icebox Project Space.
         </p>
@@ -61,12 +61,18 @@
                 </div>
                 {% endif %}
               </div>
-              {% if event.flickr and event.flickr.size > 0 %}
+              {% assign has_flickr = false %}{% if event.flickr and event.flickr.size > 0 %}{% assign has_flickr = true %}{% endif %}
+              {% assign has_instagram = false %}{% if event.instagram and event.instagram.size > 0 %}{% assign has_instagram = true %}{% endif %}
+              {% if has_flickr or has_instagram %}
               <div class="past-event-flickr">
                 <span class="past-event-flickr-label">Photos:</span>
                 {% for link in event.flickr %}
                 {% assign flickr_user = link.url | split: '/photos/' | last | split: '/' | first %}
                 <a href="{{ link.url }}" target="_blank" rel="noopener">{% if link.label %}{{ link.label }} ({{ flickr_user }}){% else %}{{ flickr_user }} photos{% endif %}</a>
+                {% endfor %}
+                {% for link in event.instagram %}
+                {% assign ig_handle = link.url | split: 'instagram.com/' | last | split: '/' | first %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener">{% if link.label %}{{ link.label }}{% else %}@{{ ig_handle }} on Instagram{% endif %}</a>
                 {% endfor %}
               </div>
               {% endif %}
