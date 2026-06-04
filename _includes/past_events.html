@@ -35,6 +35,11 @@
                 <a href="#flierModal-{{ event.event_id }}" data-toggle="modal">
                   <img src="/img/fliers/{{ event.flier.img }}" alt="{{ event.flier.alt | default: event.name }}" width="{{ event.flier.width }}" height="{{ event.flier.height }}" loading="lazy" decoding="async">
                 </a>
+                {% for xf in event.extra_fliers %}
+                <a href="#flierModal-{{ event.event_id }}-{{ forloop.index }}" data-toggle="modal">
+                  <img src="/img/fliers/{{ xf.img }}" alt="{{ xf.alt | default: event.name }}" width="{{ xf.width }}" height="{{ xf.height }}" loading="lazy" decoding="async">
+                </a>
+                {% endfor %}
               </div>
               {% endif %}
               {% if event.description %}

@@ -53,9 +53,6 @@
             <h2>{{ event.name }}</h2>
             <p class="flier-modal-meta">{{ event.venue }} · {{ event.date_display }}</p>
             <img src="/img/fliers/{{ event.flier.img }}" class="img-responsive img-centered" alt="{{ event.flier.alt | default: event.name }}" width="{{ event.flier.width }}" height="{{ event.flier.height }}" loading="lazy" decoding="async">
-            {% for xf in event.extra_fliers %}
-            <img src="/img/fliers/{{ xf.img }}" class="img-responsive img-centered" alt="{{ xf.alt | default: event.name }}" width="{{ xf.width }}" height="{{ xf.height }}" loading="lazy" decoding="async">
-            {% endfor %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
               Close</button>
           </div>
@@ -64,5 +61,30 @@
     </div>
   </div>
 </div>
+{% for xf in event.extra_fliers %}
+<div class="portfolio-modal modal fade" id="flierModal-{{ event.event_id }}-{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>{{ event.name }}</h2>
+            <p class="flier-modal-meta">{{ event.venue }} · {{ event.date_display }}</p>
+            <img src="/img/fliers/{{ xf.img }}" class="img-responsive img-centered" alt="{{ xf.alt | default: event.name }}" width="{{ xf.width }}" height="{{ xf.height }}" loading="lazy" decoding="async">
+            <button type="button" class="btn btn-default" data-dismiss="modal"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+              Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
 {% endif %}
 {% endfor %}

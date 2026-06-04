@@ -847,6 +847,10 @@ a.bsky-icon {
 
 .past-event-flier {
   margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .past-event-flier a {
