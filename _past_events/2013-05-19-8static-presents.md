@@ -9,4 +9,9 @@ music:
   - "ANAMANAGUCHI"
   - "Infinity Shred"
   - "an0va"
+flier:
+  img: 2013-05-19-flier.jpg
+  alt: "Anamanaguchi Endless Fantasy Tour flier"
+  width: 540
+  height: 720
 ---
