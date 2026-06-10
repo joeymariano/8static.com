@@ -1,0 +1,32 @@
+# Artist link lookup for past-event lineups.
+# Key = artist name lowercased (the template downcases + strips before lookup,
+#   so case variants like "Anamanaguchi"/"ANAMANAGUCHI" share one entry).
+# Spelling variants that appear in event data get their own key pointing at the
+#   same URL. Artists with no verified link are simply left out and render as
+#   plain text. Preference: official site when it's the canonical home,
+#   otherwise the most prominent presence (usually Bandcamp).
+
+"nmlstyl": "https://nmlstyl.art/"
+"nml styl": "https://nmlstyl.art/"
+"anamanaguchi": "https://anamanaguchi.com/"
+"nullsleep": "https://nullsleep.com/"
+"bit shifter": "https://bit-shifter.bandcamp.com/"
+"disasterpeace": "https://disasterpeace.com/"
+"inverse phase": "https://inversephase.bandcamp.com/"
+"inverse phase (bloop museum talk)": "https://inversephase.bandcamp.com/"
+"trash80": "https://trash80.com/"
+"danimal cannon": "https://danimalcannon.bandcamp.com/"
+"starscream": "https://starscream.bandcamp.com/"
+"infinity shred": "https://infinityshred.bandcamp.com/"
+"crashfaster": "https://crashfaster.bandcamp.com/"
+"mega ran": "https://megaran.com/"
+"dj cutman": "https://djcutman.com/"
+"cutman": "https://djcutman.com/"
+"a_rival": "https://rivalrivalrival.bandcamp.com/"
+"chipocrite": "https://www.chipocrite.com/"
+"saskrotch": "https://saskrotch.bandcamp.com/"
+"virt": "https://virt.bandcamp.com/"
+"rainbowdragoneyes": "https://rainbowdragoneyes.bandcamp.com/"
+"glomag": "https://glomag.bandcamp.com/"
+"minusbaby": "https://minusbaby.com/"
+"goto80": "https://www.goto80.com/"

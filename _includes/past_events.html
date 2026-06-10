@@ -53,7 +53,7 @@
                 <div class="past-event-col">
                   <h4>Music</h4>
                   <ul>
-                    {% for performer in event.music %}<li>{{ performer }}</li>{% endfor %}
+                    {% for performer in event.music %}<li>{% assign akey = performer | downcase | strip %}{% assign aurl = site.data.artists[akey] %}{% if aurl %}<a href="{{ aurl }}" target="_blank" rel="noopener">{{ performer }}</a>{% else %}{{ performer }}{% endif %}</li>{% endfor %}
                   </ul>
                 </div>
                 {% endif %}
@@ -61,7 +61,7 @@
                 <div class="past-event-col">
                   <h4>Visuals</h4>
                   <ul>
-                    {% for performer in event.visuals %}<li>{{ performer }}</li>{% endfor %}
+                    {% for performer in event.visuals %}<li>{% assign akey = performer | downcase | strip %}{% assign aurl = site.data.artists[akey] %}{% if aurl %}<a href="{{ aurl }}" target="_blank" rel="noopener">{{ performer }}</a>{% else %}{{ performer }}{% endif %}</li>{% endfor %}
                   </ul>
                 </div>
                 {% endif %}
