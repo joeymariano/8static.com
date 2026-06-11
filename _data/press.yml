@@ -14,6 +14,12 @@
   url: "https://www.inquirer.com/philly/entertainment/20100317_Music_is_their_game.html"
   note: "Early feature on 8static and the Philly chiptune scene at Studio 34."
 
+- date: "2011-07-15"
+  outlet: "VGMO — Video Game Music Online"
+  title: "Paul Weinstein (aka Chipocrite) Interview: Chiptune Concerts with Game Boys"
+  url: "https://vgmonline.net/paulweinsteininterview/"
+  note: "Interview with co-organizer Chipocrite — 'I wouldn't be anywhere in chip music without 8static.'"
+
 - date: "2011-08-16"
   outlet: "Knight Foundation"
   title: "Chiptunes at home in Philly"
@@ -32,36 +38,18 @@
   url: "https://technical.ly/philly/2013/09/10/8static-festival-largest-chiptune-north-america/"
   note: "Coverage of the 8static Festival Kickstarter — $11k raised."
 
-- date: "2014-07-07"
-  outlet: "Technical.ly"
-  title: "Nominees announced for 2014 Philadelphia Geek Awards"
-  url: "https://technical.ly/philly/2014/07/07/philadelphia-geek-awards-nominees-2014/"
-  note: "8static Festival nominated for Event of the Year."
-
-- date: "2014-08-19"
-  outlet: "Technical.ly"
-  title: "See all the winners from this year's Philly Geek Awards"
-  url: "https://technical.ly/philly/2014/08/19/philly-geek-awards-2014-winners/"
-  note: "Roundup of the 2014 Philadelphia Geek Award winners; 8static Festival was a nominee for Event of the Year."
-
 - date: "2014-10-13"
   outlet: "Geekadelphia"
   title: "8static Annual Chiptune Festival Returns October 16–18"
   url: "https://web.archive.org/web/20160521003155/http://www.geekadelphia.com/2014/10/13/8static-annual-chiptune-festival-returns-october-16-18/"
   archived: true
-  note: "Preview of 8static Fest 2014. Original site is defunct; link goes to the Wayback Machine."
+  note: "Preview of 8static Fest 2014."
 
 - date: "2014-10-17"
   outlet: "Chiptography"
   title: "8static Festival 2014: Day 2"
   url: "https://chiptography.com/?p=3123"
   note: "Photo coverage of 8static Festival 2014, Day 2, by Marjorie Becker."
-
-- date: "2014-10-17"
-  outlet: "Volterock Anomalous"
-  title: "8STATIC FESTIVAL is LIVE"
-  url: "http://volterock.blogspot.com/2014/10/8static-festival-is-live.html"
-  note: "Schedule and writeup for 8static Fest 2014."
 
 - date: "2015-10-13"
   outlet: "Philadelphia Inquirer"
@@ -74,11 +62,11 @@
   title: "8static Festival — Philly Geek Awards nominee"
   url: "https://web.archive.org/web/20241015220537/https://www.phillygeekawards.com/nominees/8-static-festival/"
   archived: true
-  note: "Official Philadelphia Geek Awards nominee page, via the Wayback Machine."
+  note: "8static Festival's Philadelphia Geek Awards nominee page — Event of the Year."
 
 - date: "2015-10-16"
   outlet: "Rock On Philly"
   title: "8static Festival 2015 Night 1 Review"
   url: "https://www.8staticfestival.com/"
   archived: true
-  note: "Night 1 review by Justin Harlan. The original site is gone; an excerpt is preserved on 8staticfestival.com."
+  note: "Night 1 review by Justin Harlan; excerpt preserved on 8staticfestival.com."

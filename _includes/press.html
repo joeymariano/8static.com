@@ -4,11 +4,15 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Press</h2>
-        <p class="press-intro">Selected coverage of 8static, 2009–2015.</p>
+        <p class="press-intro">Selected coverage of 8static.</p>
       </div>
     </div>
     <ol class="press-list">
-      {% assign press_items = site.data.press | sort: 'date' | reverse %}
+      {% comment %} Full/live articles first, archived (Wayback/preserved) links last; newest-first within each group. {% endcomment %}
+      {% assign by_date = site.data.press | sort: 'date' | reverse %}
+      {% assign press_live = by_date | where_exp: "p", "p.archived != true" %}
+      {% assign press_archived = by_date | where_exp: "p", "p.archived == true" %}
+      {% assign press_items = press_live | concat: press_archived %}
       {% for p in press_items %}
       <li class="press-item">
         <div class="press-meta">
