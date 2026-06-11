@@ -13,7 +13,8 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>{{ artist.name }}</h2>
+            {% assign akey = artist.name | downcase | strip %}{% assign aurl = site.data.artists[akey] %}
+            <h2>{% if aurl %}<a href="{{ aurl }}" target="_blank" rel="noopener">{{ artist.name }}</a>{% else %}{{ artist.name }}{% endif %}</h2>
             <img src="/img/artists/{{ artist.img }}" class="img-responsive img-centered" alt="{{ artist.alt }}" width="{{ artist.width }}" height="{{ artist.height }}" loading="lazy" decoding="async">
             {% if artist.bio %}
             <p>{{ artist.bio}}</p>
