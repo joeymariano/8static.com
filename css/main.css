@@ -1003,3 +1003,82 @@ a.bsky-icon {
     max-width: 100%;
   }
 }
+
+/* ---------- Artist modal link ---------- */
+
+.artist-link {
+  margin-top: 14px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Press section ---------- */
+
+.press-intro {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  opacity: 0.85;
+}
+
+.press-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.press-item {
+  padding: 16px 4px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.press-item:last-child {
+  border-bottom: none;
+}
+
+.press-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.press-year {
+  font-family: 'VT323', monospace;
+  font-size: 26px;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.press-outlet {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.press-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.press-archived {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.6;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+.press-note {
+  opacity: 0.7;
+  font-size: 14px;
+  margin: 5px 0 0;
+}

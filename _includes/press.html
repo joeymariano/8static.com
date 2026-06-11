@@ -1,0 +1,24 @@
+<!-- Press Section -->
+<section id="press">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Press</h2>
+        <p class="press-intro">Selected coverage of 8static, 2009–2016.</p>
+      </div>
+    </div>
+    <ol class="press-list">
+      {% assign press_items = site.data.press | sort: 'date' | reverse %}
+      {% for p in press_items %}
+      <li class="press-item">
+        <div class="press-meta">
+          <span class="press-year">{{ p.date | date: '%Y' }}</span>
+          <span class="press-outlet">{{ p.outlet }}</span>
+        </div>
+        <a class="press-title" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% if p.archived %} <span class="press-archived" title="Original page is offline — linked via an archive">archived</span>{% endif %}
+        {% if p.note %}<p class="press-note">{{ p.note }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
