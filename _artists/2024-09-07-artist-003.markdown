@@ -6,6 +6,7 @@ img: zaku.jpeg
 alt: all the memebers of Zaku
 name: Zaku
 genre: chip fusion
+link: https://zaku.bandcamp.com/
 bio: Zaku focuses on wind-synthesizer-fronted instrumental tunes inspired by 80s Japanese Jazz Fusion and New Wave of British Heavy Metal.
 width: 1600
 height: 800

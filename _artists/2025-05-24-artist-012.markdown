@@ -6,6 +6,7 @@ img: DanimalCannon5.jpg
 alt: Danimal Cannon in front of a screen with chiptue live visuals
 name: Danimal Cannon
 genre: chip, metal
+link: https://danimalcannon.bandcamp.com/
 bio: Danimal Cannon is a composer and sound designer for videogames, film, and commercials from Buffalo, NY. His masterfully crafted compositions have been featured in dozens of videogame titles as well as being featured in work for Pokemon, E3, and Amazon. He is well known for his elaborate chiptune compositions, enthralling electronic beats, and supersonic guitar shredding. His concerts have enraptured and enchanted audiences across 4 continents using his signature array of wickedly warped beats and captivating crescendos.
 width: 1065
 height: 1600

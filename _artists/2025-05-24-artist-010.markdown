@@ -6,6 +6,7 @@ img: mountain-chiefs.jpg
 alt: buncha trash with a guitar stuck in it
 name: Mountain Chiefs
 genre: rock
+link: https://mountainchiefs.bandcamp.com/
 bio: “Mountain Chiefs are a three-piece, two-bass band. They play riffs.”
 width: 960
 height: 960

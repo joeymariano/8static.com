@@ -6,6 +6,7 @@ img: dataCats.jpg
 alt: broken mirrors reveal datacats' face
 name: datacats
 genre: Visuals for 12/28/24
+link: https://datacats.bandcamp.com/
 bio: datacats is a project that seeks to elevate the audiovisual experience by combining obsolete analog technology to produce retina scorching imagery.
 width: 1600
 height: 1600
